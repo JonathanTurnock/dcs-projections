@@ -33,19 +33,18 @@ const y = 628703.2536546878;
 
 const projector = proj4("+proj=tmerc +lat_0=0 +lon_0=33 +k_0=0.9996 +x_0=-99516.9999999732 +y_0=-4998114.999999984 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu");
 
-
 const LOtoLL = (x, y) => {
-    const [lon, lat] = projector.inverse([y, x]);
-    return [lat, lon];
+    const [lat, lon] = projector.inverse([y, x]);
+    return [lon, lat];
 }
 
 const LLtoLO = (lon, lat) => {
-    const [y, x] = projector.forward([lon, lat]);
+    const [x, y] = projector.forward([lon, lat]);
     return [x, y];
 }
 
-console.log(LLtoLO(lon, lat));      // [-252691.23432109784, 628703.2536546...]
 console.log(LOtoLL(x, y));          // [42.5172, 41.86220000000001]
+console.log(LLtoLO(lon, lat));      // [628703.2536546878, -252691.23432109...]
 ```
 
 ### Python
