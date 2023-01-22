@@ -1,10 +1,10 @@
 {
-  "SYRIA": "+proj=tmerc +lat_0=0 +lon_0=39 +k_0=0.9996 +x_0=282801.00000003993 +y_0=-3879865.9999999935 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "CAUCASUS": "+proj=tmerc +lat_0=0 +lon_0=33 +k_0=0.9996 +x_0=-99516.9999999732 +y_0=-4998114.999999984 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "FALKLANDS": "+proj=tmerc +lat_0=0 +lon_0=-57 +k_0=0.9996 +x_0=147639.99999997593 +y_0=5815417.000000032 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "MARIANA_ISLANDS": "+proj=tmerc +lat_0=0 +lon_0=147 +k_0=0.9996 +x_0=238417.99999989968 +y_0=-1491840.000000048 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "NEVADA": "+proj=tmerc +lat_0=0 +lon_0=-117 +k_0=0.9996 +x_0=-193996.80999964548 +y_0=-4410028.063999966 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "PERSIAN_GULF": "+proj=tmerc +lat_0=0 +lon_0=57 +k_0=0.9996 +x_0=75755.99999999645 +y_0=-2894933.0000000377 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "NORMANDY": "+proj=tmerc +lat_0=0 +lon_0=-3 +k_0=0.9996 +x_0=-195526.00000000204 +y_0=-5484812.999999951 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
-  "THE_CHANNEL": "+proj=tmerc +lat_0=0 +lon_0=3 +k_0=0.9996 +x_0=99376.00000000288 +y_0=-5636889.00000001 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu"
+  "Syria": "+proj=tmerc +lat_0=0 +lon_0=39 +k_0=0.9996 +x_0=282801.00000003993 +y_0=-3879865.9999999935 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "Caucasus": "+proj=tmerc +lat_0=0 +lon_0=33 +k_0=0.9996 +x_0=-99516.9999999732 +y_0=-4998114.999999984 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "Falklands": "+proj=tmerc +lat_0=0 +lon_0=-57 +k_0=0.9996 +x_0=147639.99999997593 +y_0=5815417.000000032 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "MarianaIslands": "+proj=tmerc +lat_0=0 +lon_0=147 +k_0=0.9996 +x_0=238417.99999989968 +y_0=-1491840.000000048 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "Nevada": "+proj=tmerc +lat_0=0 +lon_0=-117 +k_0=0.9996 +x_0=-193996.80999964548 +y_0=-4410028.063999966 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "PersianGulf": "+proj=tmerc +lat_0=0 +lon_0=57 +k_0=0.9996 +x_0=75755.99999999645 +y_0=-2894933.0000000377 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "Normandy": "+proj=tmerc +lat_0=0 +lon_0=-3 +k_0=0.9996 +x_0=-195526.00000000204 +y_0=-5484812.999999951 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu",
+  "TheChannel": "+proj=tmerc +lat_0=0 +lon_0=3 +k_0=0.9996 +x_0=99376.00000000288 +y_0=-5636889.00000001 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu"
 }
