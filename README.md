@@ -4,21 +4,42 @@ List of DCS World Projections to be used to power various projection libraries
 
 ## Usage
 
-### Javascript
+First you will need a library to convert mercator projections then use the string to cast to and from coords.
+
+Here are some test values to use for the caucasus projection
 
 ```javascript
-const projector = proj4(<<desired-projection-string>>)
+const lat = 42.5172;
+const lon = 41.8622;
+const x = -252691.23432109784;
+const y = 628703.2536546878;
+```
 
-function LOtoLL(projector, [x, y]) {
+### Javascript
+
+https://www.npmjs.com/package/proj4
+
+```javascript
+const proj4 = require("proj4");
+
+const projector = proj4(<<desired-projection-string>>);
+
+const LOtoLL = ([x, y]) => {
     const [xa, ya] = projector.inverse([y, x]);
     return [ya, xa];
 }
 
-function LLtoLO([lon, lat], projector) {
-    const [y, x] = this.projector.forward([lon, lat]);
+const LLtoLO = ([lon, lat]) => {
+    const [y, x] = projector.forward([lon, lat]);
     return [x, y];
 }
 ```
+
+### Python
+
+https://pyproj4.github.io/pyproj/stable/
+
+> TODO: Add Projection Example
 
 ## Credits
 
