@@ -55,8 +55,8 @@ https://pyproj4.github.io/pyproj/stable/
 ```python
 from pyproj import CRS, Proj
 
-lat = 42.5172
 lon = 41.8622
+lat = 42.5172
 x = -252691.23432109784
 y = 628703.2536546878
 
@@ -65,17 +65,17 @@ crs = CRS.from_proj4(
 
 projector = Proj(crs)
 
+def LOtoLL(x, y):
+    (lat, lon) = projector(latitude=x, longitude=y, inverse=True)
+    return [lon, lat]
 
 def LLtoLO(lon, lat):
-    return projector(latitude=lat, longitude=lon)
+    (x, y) = projector(latitude=lat, longitude=lon)
+    return [x, y]
 
 
-def LOtoLL(x, y):
-    return projector(latitude=x, longitude=y, inverse=True)
-
-
-print(LOtoLL(x, y))         # (41.862199999999994, 42.51719999999997)
-print(LLtoLO(lon, lat))     # (628703.2536546879, -252691.23432109412)
+print(LOtoLL(x, y))         # [42.51719999999997, 41.862199999999994]
+print(LLtoLO(lon, lat))     # [628703.2536546879, -252691.23432109412]
 ```
 
 ## Credits
