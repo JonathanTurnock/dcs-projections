@@ -44,8 +44,8 @@ const LLtoLO = (lon, lat) => {
     return [x, y];
 }
 
-console.log(LLtoLO(lon, lat)); // [-252691.23432109784, 628703.2536546...]
-console.log(LOtoLL(x, y)); // [42.5172, 41.86220000000001]
+console.log(LLtoLO(lon, lat));      // [-252691.23432109784, 628703.2536546...]
+console.log(LOtoLL(x, y));          // [42.5172, 41.86220000000001]
 ```
 
 ### Python
@@ -66,7 +66,7 @@ crs = CRS.from_proj4(
 projector = Proj(crs)
 
 
-def LLtoLO(lat, lon):
+def LLtoLO(lon, lat):
     return projector(latitude=lat, longitude=lon)
 
 
@@ -74,8 +74,8 @@ def LOtoLL(x, y):
     return projector(latitude=x, longitude=y, inverse=True)
 
 
-print(LLtoLO(lat, lon)) // (628703.2536546879, -252691.23432109412)
-print(LOtoLL(x, y)) // (41.862199999999994, 42.51719999999997)
+print(LOtoLL(x, y))         # (41.862199999999994, 42.51719999999997)
+print(LLtoLO(lon, lat))     # (628703.2536546879, -252691.23432109412)
 ```
 
 ## Credits
