@@ -43,7 +43,31 @@ const LLtoLO = ([lon, lat]) => {
 
 https://pyproj4.github.io/pyproj/stable/
 
-> TODO: Add Projection Example
+```python
+from pyproj import CRS, Proj
+
+lat = 42.5172
+lon = 41.8622
+x = -252691.23432109784
+y = 628703.2536546878
+
+crs = CRS.from_proj4(
+    "+proj=tmerc +lat_0=0 +lon_0=33 +k_0=0.9996 +x_0=-99516.9999999732 +y_0=-4998114.999999984 +towgs84=0,0,0,0,0,0,0 +units=m +vunits=m +ellps=WGS84 +no_defs +axis=neu")
+
+projector = Proj(crs)
+
+
+def LLtoLO(lat, lon):
+    return projector(latitude=lat, longitude=lon)
+
+
+def LOtoLL(x, y):
+    return projector(latitude=x, longitude=y, inverse=True)
+
+
+print(LLtoLO(lat, lon)) // (628703.2536546879, -252691.23432109412)
+print(LOtoLL(x, y)) // (41.862199999999994, 42.51719999999997)
+```
 
 ## Credits
 
