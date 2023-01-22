@@ -1,10 +1,14 @@
 # dcs-projections
 
-List of DCS World Projections to be used to power various projection libraries
+List of DCS World Projections to be used to power various projection libraries, for now this should just be imported from github raw either at run or compile time.
+
+https://raw.githubusercontent.com/JonathanTurnock/dcs-projections/main/projections.json
 
 ## Usage
 
-First you will need a library to convert mercator projections then use the string to cast to and from coords.
+Grab the data at some point, either build or runtime.
+
+You will need a library to convert mercator projections then use the string to cast to and from coords.
 
 Here are some test values to use for the caucasus projection
 
